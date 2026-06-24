@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jobs – RemoteHire</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">RemoteHire</div>
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="hero small">
+    <h1>Browse Remote Jobs</h1>
+    <p>Find jobs that fit your skills and lifestyle</p>
+</section>
+
+<section class="jobs">
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search job or company" />
+        <select id="locationFilter">
+            <option value="">All Locations</option>
+            <option value="Remote">Remote</option>
+            <option value="Worldwide">Worldwide</option>
+        </select>
+        <select id="typeFilter">
+            <option value="">All Types</option>
+            <option value="Full-time">Full-time</option>
+            <option value="Contract">Contract</option>
+        </select>
+    </div>
+
+    <div class="job-list" id="jobList"></div>
+    <p id="noResults" class="hidden">No jobs found.</p>
+</section>
+
+<footer class="footer">© 2026 RemoteHire</footer>
+
+<script src="jobs.js"></script>
+</body>
+</html>
